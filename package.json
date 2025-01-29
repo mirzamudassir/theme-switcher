@@ -1,9 +1,13 @@
 {
   "name": "ox-theme-switcher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Theme Switcher NPM package for NextJs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
