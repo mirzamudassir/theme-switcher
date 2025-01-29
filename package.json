@@ -2,13 +2,15 @@
   "name": "theme-switcher",
   "version": "1.0.0",
   "description": "Theme Switcher NPM package for NextJs",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": ["nextjs", "theme-switcher", "toggle theme", "tailwindcss"],
   "author": "Mudassir Mirza",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "clsx": "^2.1.1",
     "react": "^19.0.0",
